@@ -24,6 +24,4 @@ spring:
   data.rest:
     base-path: /api
     detection-strategy: annotated
-
-
-
+    
