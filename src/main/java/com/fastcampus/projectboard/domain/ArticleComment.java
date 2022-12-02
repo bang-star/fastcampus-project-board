@@ -14,6 +14,7 @@ import java.util.Objects;
         @Index(columnList = "createdAt"),
         @Index(columnList = "createdBy")
 })
+
 @Entity
 public class ArticleComment extends AuditingFields {
 
@@ -21,10 +22,11 @@ public class ArticleComment extends AuditingFields {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Setter @ManyToOne(optional = false) private Article article;               // 게시글 (ID)
-    @Setter @ManyToOne(optional = false) private UserAccount userAccount;       // 유저 정보 (ID)
+    @Setter @ManyToOne(optional = false) private Article article;           // 게시글 (ID)
+    @Setter @ManyToOne(optional = false) private UserAccount userAccount;   // 유저 정보 (ID)
 
-    @Setter @Column(nullable = false, length = 500) private String content;     // 본문
+    @Setter @Column(nullable = false, length = 500) private String content; // 본문
+    
 
 
     protected ArticleComment() { }
@@ -35,7 +37,7 @@ public class ArticleComment extends AuditingFields {
         this.content = content;
     }
 
-    public static ArticleComment of(Article article, UserAccount userAccount, String content) {
+    public static ArticleComment of(Article article, UserAccount userAccount, String content){
         return new ArticleComment(article, userAccount, content);
     }
 
