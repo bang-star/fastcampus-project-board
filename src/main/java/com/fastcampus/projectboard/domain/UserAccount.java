@@ -30,7 +30,7 @@ public class UserAccount extends AuditingFields{
 
     @Setter private String memo;
 
-    protected UserAccount(){}
+    protected UserAccount() {}
 
     private UserAccount(String userId, String userPassword, String email, String nickname, String memo) {
         this.userId = userId;
@@ -40,7 +40,7 @@ public class UserAccount extends AuditingFields{
         this.memo = memo;
     }
 
-    public static UserAccount of(String userId, String userPassword, String email, String nickname, String memo){
+    public static UserAccount of(String userId, String userPassword, String email, String nickname, String memo) {
         return new UserAccount(userId, userPassword, email, nickname, memo);
     }
 
