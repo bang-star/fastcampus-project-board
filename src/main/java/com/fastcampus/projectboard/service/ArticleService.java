@@ -62,4 +62,7 @@ public class ArticleService {
         articleRepository.deleteById(articleId);
     }
 
+    public Long getArticleCount() {
+        return articleRepository.count();
+    }
 }
