@@ -135,24 +135,23 @@ class ArticleCommentServiceTest {
                 createUserAccountDto(),
                 content,
                 LocalDateTime.now(),
-                "uno",
+                "artist",
                 LocalDateTime.now(),
-                "uno"
+                "artist"
         );
     }
 
     private UserAccountDto createUserAccountDto() {
         return UserAccountDto.of(
-                1L,
-                "uno",
+                "artist",
                 "password",
-                "uno@mail.com",
-                "Uno",
+                "artist@mail.com",
+                "artist",
                 "This is memo",
                 LocalDateTime.now(),
-                "uno",
+                "artist",
                 LocalDateTime.now(),
-                "uno"
+                "artist"
         );
     }
 
@@ -166,10 +165,10 @@ class ArticleCommentServiceTest {
 
     private UserAccount createUserAccount() {
         return UserAccount.of(
-                "uno",
+                "artist",
                 "password",
-                "uno@email.com",
-                "Uno",
+                "artist@email.com",
+                "artist",
                 null
         );
     }
