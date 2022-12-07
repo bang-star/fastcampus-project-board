@@ -334,7 +334,7 @@ class ArticleControllerTest {
                 "artist",
                 "pw",
                 "artist@mail.com",
-                "Uartistno",
+                "artist",
                 "memo",
                 LocalDateTime.now(),
                 "artist",
