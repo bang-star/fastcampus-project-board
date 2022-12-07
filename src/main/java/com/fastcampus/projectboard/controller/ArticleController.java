@@ -82,7 +82,7 @@ public class ArticleController {
 
     @PostMapping ("/form")
     public String postNewArticle(ArticleRequest articleRequest) {
-        // TODO: 인증 정보를 넣어줘야 한다.
+        // TODO: 인증 정보를 넣어줘야 함.
         articleService.saveArticle(articleRequest.toDto(UserAccountDto.of(
                 "uno", "asdf1234", "uno@mail.com", "Uno", "memo"
         )));
