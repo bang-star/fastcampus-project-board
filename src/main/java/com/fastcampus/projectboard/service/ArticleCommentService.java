@@ -52,9 +52,9 @@ public class ArticleCommentService {
         }
     }
 
-    public void deleteArticleComment(Long articleCommentId) {
+    public void deleteArticleComment(Long articleCommentId, String userId) {
         try{
-            articleCommentRepository.deleteById(articleCommentId);
+            articleCommentRepository.deleteByIdAndUserAccount_UserId(articleCommentId, userId);
         }catch (IllegalArgumentException e){
             log.warn("댓글 삭제 실패. 찾을 수 없는 댓글 입니다. articleCommentId - {}", articleCommentId);
         }
