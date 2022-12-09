@@ -32,9 +32,12 @@ spring:
 spring:
   config.activate.on-profile: cloudtype
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://{DB_HOST}:{DB_PORT}/board?characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://{DB_HOST}:{DB_PORT}/board?characterEncoding=UTF-8&serverTimezone=UTC
     username: {DB_USERNAME}
     password: {DB_PASSWORD}
-  jpa.hibernate.ddl-auto: create
+  jpa:
+    hibernate.ddl-auto: create
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MariaDBDialect
   sql.init.mode: always
