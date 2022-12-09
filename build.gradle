@@ -66,3 +66,10 @@ sourceSets {
 clean {
 	delete file(generated)
 }
+
+// cloudtype 설정
+jar{
+	manifest{
+		attributes('Main-Class': 'com.fastcampus.projectboard.FastCampusProjectBoardApplication')
+	}
+}
