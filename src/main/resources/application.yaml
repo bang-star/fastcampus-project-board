@@ -8,6 +8,12 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: trace
 
 spring:
+  profiles.active: local
+
+---
+
+spring:
+  config.activate.on-profile: local
   datasource:
     url: jdbc:mysql://localhost:3306/board
     username: artist
@@ -34,9 +40,9 @@ spring:
   config.activate.on-profile: prod
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://{DB_HOST}:{DB_PORT}/board?characterEncoding=UTF-8&serverTimezone=UTC
-    username: {DB_USERNAME}
-    password: {DB_PASSWORD}
+    url: jdbc:mariadb://${DB_HOST}:${DB_PORT}/board?characterEncoding=UTF-8&serverTimezone=UTC
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
   jpa:
     open-in-view: false
     show-sql: true
