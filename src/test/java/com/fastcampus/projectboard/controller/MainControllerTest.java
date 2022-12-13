@@ -18,7 +18,7 @@ class MainControllerTest {
 
     private final MockMvc mvc;
 
-    public MainControllerTest(@Autowired MockMvc mvc) { this.mvc = mvc; }
+    MainControllerTest(@Autowired MockMvc mvc) { this.mvc = mvc; }
 
     @Test
     void givenNothing_whenRequestingRootPage_thenRedirectToArticlesPage() throws Exception {
