@@ -15,10 +15,10 @@ spring:
 spring:
   config.activate.on-profile: local
   datasource:
-    url: jdbc:mysql://localhost:3306/board
+    url: jdbc:postgresql://localhost:5432/board
     username: artist
-    password: thisisTESTpw!#%&
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: artist
+    driver-class-name:
   jpa:
     open-in-view : false
     defer-datasource-initialization: true
