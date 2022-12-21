@@ -31,7 +31,7 @@ jobs:
         uses: cloudtype-github-actions/deploy@v1
         with:
           token: ${{ secrets.CLOUDTYPE_TOKEN }}
-          project: myproject
+          project: fastcampus-project-board
           yaml: |-
             name: board
             app: java@17
