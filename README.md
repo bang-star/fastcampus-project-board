@@ -9,7 +9,7 @@
 * Intellij IDEA Ultimate 2022.1.1 ~ 2022.1.3
 * Java 17
 * Gradle 7.4.1
-* Spring Boot 2.7.0
+* Spring Boot 2.7.5
 
 ## 기술 세부 스택
 
@@ -20,10 +20,13 @@ Spring Boot
 * Spring Data JPA
 * Rest Repositories
 * Rest Repositories HAL Explorer
+* Swagger
 * Thymeleaf
 * Spring Security
+* OAuth Client
 * H2 Database
-* MySQL Driver
+* MySQL(MariaDB) Driver
+* PostgresSQL Driver
 * Lombok
 * Spring Boot DevTools
 * Spring Configuration Processor
@@ -32,15 +35,15 @@ Spring Boot
 
 * QueryDSL 5.0.0
 * Bootstrap 5.2.0-Beta1
-* Heroku
+* CloudType
 
 ## 데모 페이지
 
-* https://port-0-fastcampus-project-board-11er1a24lbg7rp4r.gksl2.cloudtype.app/
+* https://port-0-fastcampus-project-board-11er1a24lbgm75c3.gksl2.cloudtype.app/
 
 ## 질문, 건의
 
 프로젝트에 관해 궁금하신 점이나 건의 사항이 있으시다면 아래 항목을 이용해 주세요.
 
-* Issues: 버그 리포트, 제안 사항
-* Discussions: 프로젝트와 관련한 논의와 정보
+* [Issues](https://github.com/bang-star/fastcampus-project-board/issues): 버그 리포트, 제안 사항
+* [Discussions](https://github.com/bang-star/fastcampus-project-board/discussions): 프로젝트와 관련한 논의와 정보
