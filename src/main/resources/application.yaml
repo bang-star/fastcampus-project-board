@@ -15,9 +15,9 @@ spring:
 spring:
   config.activate.on-profile: local
   datasource:
-    url: jdbc:postgresql://localhost:5432/board
-    username: artist
-    password: artist
+    url: ${LOCAL_DB_URL}
+    username: ${LOCAL_DB_USERNAME}
+    password: ${LOCAL_DB_PASSWORD}
     driver-class-name:
   jpa:
     open-in-view : false
@@ -55,7 +55,7 @@ spring:
   config.activate.on-profile: prod
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://${DB_HOST}:${DB_PORT}/board?characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:${DB_HOST}://${DB_HOST}:${DB_PORT}/board?characterEncoding=UTF-8&serverTimezone=UTC
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   jpa:
