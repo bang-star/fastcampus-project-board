@@ -12,6 +12,8 @@ options:
       value: DB_USERNAME
     - name: KAKAO_OAUTH_CLIENT_ID
       value: KAKAO_OAUTH_CLIENT_ID
+    - name: KAKAO_OAUTH_CLIENT_SECRET
+      value: KAKAO_OAUTH_CLIENT_SECRET
     - name: SPRING_PROFILES_ACTIVE
       value: SPRING_PROFILES_ACTIVE
 
