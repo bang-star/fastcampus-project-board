@@ -7,7 +7,7 @@ logging:
     org.springframework.web.servlet: debug
     org.hibernate.type.descriptor.sql.BasicBinder: trace
 
-spring.profiles.active: ${SPRING_PROFILES_ACTIVE}
+spring.profiles.active: prod
 
 ---
 
