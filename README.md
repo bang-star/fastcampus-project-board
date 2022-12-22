@@ -1,5 +1,3 @@
-[![Java CI with Gradle](https://github.com/bang-star/fastcampus-project-board/actions/workflows/gradle.yml/badge.svg)](https://github.com/bang-star/fastcampus-project-board/actions/workflows/gradle.yml)
-
 # 게시판 서비스
 
 가장 기본적이고 보편적인 게시판 기능을 둘러볼 수 있는 서비스입니다. 2022년 6월 기준 가장 최신의 스프링 부트와 관련 기술들, 자바 17 기능들, 개발 도구들을 경험할 수 있도록 만들어졌습니다.

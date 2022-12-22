@@ -12,6 +12,7 @@ spring.profiles.active: ${SPRING_PROFILES_ACTIVE}
 ---
 
 spring:
+  config.activate.on-profile: local
   datasource:
     url: ${LOCAL_DB_URL}
     username: ${LOCAL_DB_USERNAME}
@@ -51,24 +52,20 @@ spring:
   config.activate.on-profile: prod
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:${DB_HOST}://${DB_HOST}:${DB_PORT}/board?characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mariadb://${DB_HOST}:${DB_PORT}/board?characterEncoding=UTF-8&serverTimezone=UTC
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   jpa:
     open-in-view: false
     show-sql: true
-    defer-datasource-initialization: off
-    hibernate.ddl-auto: none
     properties:
-      hibernate.dialect: org.hibernate.dialect.MariaDBDialect
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
   sql.init.mode: never
   data.rest:
     base-path: /api
     detection-strategy: annotated
-  thymeleaf3:
-    decoupled-logic: true
+  thymeleaf3.decoupled-logic: true
   security:
     oauth2:
       client:
