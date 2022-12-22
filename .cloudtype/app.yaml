@@ -1,0 +1,21 @@
+name: fastcampus-project-board
+app: java@17
+options:
+  buildenv:
+    - name: DB_HOST
+      value: DB_HOST
+    - name: DB_PASSWORD
+      value: DB_PASSWORD
+    - name: DB_PORT
+      value: DB_PORT
+    - name: DB_USERNAME
+      value: DB_USERNAME
+    - name: KAKAO_OAUTH_CLIENT_ID
+      value: KAKAO_OAUTH_CLIENT_ID
+    - name: SPRING_PROFILES_ACTIVE
+      value: SPRING_PROFILES_ACTIVE
+
+context:
+  git:
+    url: https://github.com/bang-star/fastcampus-project-board
+    branch: main
